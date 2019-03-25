@@ -68,9 +68,6 @@ def prepare_train_data():
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument()
-    prepare_train_data()
     prepare_test_data()
 
 

@@ -67,7 +67,7 @@ class TestDataset(Dataset):
         # image = torch.tensor(self.transform_image(image , angle)).float()
         # mask = torch.tensor(self.transform_image(mask , angle)).float()
         sample = {}
-        name = names['input'].split('\\')[1]
+        name = os.path.basename(names['input'])
         sample['images'] = image
         sample['names'] = name
         return sample
